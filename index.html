@@ -40,6 +40,21 @@
             opacity: 1;
             transform: translateY(0);
         }
+
+        .glass-card {
+            background: rgba(255, 255, 255, 0.05); /* Sedikit transparan */
+            backdrop-filter: blur(12px);
+            -webkit-backdrop-filter: blur(12px); /* Safari support */
+            border-radius: 1rem; /* 16px */
+            border: 1px solid rgba(255, 255, 255, 0.1);
+            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
+            transition: all 0.3s ease;
+        }
+        .glass-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 8px 30px rgba(0, 0, 0, 0.25);
+            background: rgba(255, 255, 255, 0.08);
+        }
     </style>
 </head>
 <body class="bg-gray-950 text-gray-300 antialiased">
@@ -59,9 +74,8 @@
                     <a href="#projects" class="text-gray-300 hover:text-blue-400 transition-colors">Projects</a>
                     <a href="#skills" class="text-gray-300 hover:text-blue-400 transition-colors">Skills</a>
                     <a href="#certifications" class="text-gray-300 hover:text-blue-400 transition-colors">Certifications</a>
-                    <a href="#contact" class="rounded-md bg-blue-500 px-4 py-2 text-sm font-medium text-white hover:bg-blue-600 transition-all transform hover:scale-105">
-                        Contact
-                    </a>
+                    <a href="#recommendations" class="text-gray-300 hover:text-blue-400 transition-colors">Recommendations</a>
+                    <a href="#contact" class="rounded-md bg-blue-500 px-4 py-2 text-sm font-medium text-white hover:bg-blue-600 transition-all transform hover:scale-105">Contact</a>
                 </div>
                 
                 <!-- Mobile Menu Button -->
@@ -80,6 +94,7 @@
                 <a href="#projects" class="block rounded-md px-3 py-2 text-base font-medium text-gray-300 hover:bg-gray-800">Projects</a>
                 <a href="#skills" class="block rounded-md px-3 py-2 text-base font-medium text-gray-300 hover:bg-gray-800">Skills</a>
                 <a href="#certifications" class="block rounded-md px-3 py-2 text-base font-medium text-gray-300 hover:bg-gray-800">Certifications</a>
+                <a href="#recommendations" class="block rounded-md px-3 py-2 text-base font-medium text-gray-300 hover:bg-gray-800">Recommendations</a>
                 <a href="#contact" class="block rounded-md bg-blue-500 px-3 py-2 text-base font-medium text-white hover:bg-blue-600">Contact</a>
             </div>
         </nav>
@@ -385,6 +400,68 @@
             </div>
         </section>
         
+        <!-- Recommendations Section -->
+        <section id="recommendations" class="mt-20 md:mt-28 scroll-mt-20 fade-in-section">
+            <h2 class="text-3xl font-bold text-white mb-8 text-center">Recommendations</h2>
+            <div class="max-w-5xl mx-auto grid grid-cols-1 md:grid-cols-3 gap-6">
+                <!-- Rekomendasi 1 -->
+                <div class="glass-card p-8 mb-8">
+                    <svg class="w-10 h-10 text-blue-400 mb-4" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 16 16">
+                        <path d="M12 12a1 1 0 0 0 1-1V8.558a1 1 0 0 0-1-1h-1.388c0-.351.021-.703.062-1.054.062-.372.166-.703.31-.992.145-.29.331-.517.559-.683.227-.186.516-.279.868-.279V3c-.579 0-1.085.124-1.52.372a3.322 3.322 0 0 0-1.085.992 4.92 4.92 0 0 0-.62 1.458A7.712 7.712 0 0 0 9 7.558V11a1 1 0 0 0 1 1h2Zm-6 0a1 1 0 0 0 1-1V8.558a1 1 0 0 0-1-1H4.612c0-.351.021-.703.062-1.054.062-.372.166-.703.31-.992.145-.29.331-.517.559-.683.227-.186.516-.279.868-.279V3c-.579 0-1.085.124-1.52.372a3.322 3.322 0 0 0-1.085.992 4.92 4.92 0 0 0-.62 1.458A7.712 7.712 0 0 0 3 7.558V11a1 1 0 0 0 1 1h2Z"/>
+                    </svg>
+
+                    <blockquote class="text-lg italic text-gray-200 leading-relaxed flex-grow">
+                        "I had the chance to work with Eunice at Mudamudigaul, where she was our go-to Content Writer. She’s awesome at crafting content that really connects with our audience and fits perfectly with our brand. Eunice always managed to deliver great work, even when deadlines were tight, and her creativity helped us stand out.
+                        <br><br>On top of that, she's super easy to get along with and brings a really positive vibe to the team. Whether during brainstorming sessions or casual chats, Eunice makes the work environment more enjoyable!!"
+                    </blockquote>
+
+                    <div class="mt-6">
+                        <p class="font-bold text-white text-lg">Sulthan Erland Alfaril, RSA</p>
+                        <p class="text-sm text-blue-300">Founder @mudamudigaul</p>
+                    </div>
+                </div>
+
+                <!-- Rekomendasi 2 -->
+                <div class="glass-card p-8 mb-8">
+                    <svg class="w-10 h-10 text-blue-400 mb-4" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 16 16">
+                        <path d="M12 12a1 1 0 0 0 1-1V8.558a1 1 0 0 0-1-1h-1.388c0-.351.021-.703.062-1.054.062-.372.166-.703.31-.992.145-.29.331-.517.559-.683.227-.186.516-.279.868-.279V3c-.579 0-1.085.124-1.52.372a3.322 3.322 0 0 0-1.085.992 4.92 4.92 0 0 0-.62 1.458A7.712 7.712 0 0 0 9 7.558V11a1 1 0 0 0 1 1h2Zm-6 0a1 1 0 0 0 1-1V8.558a1 1 0 0 0-1-1H4.612c0-.351.021-.703.062-1.054.062-.372.166-.703.31-.992.145-.29.331-.517.559-.683.227-.186.516-.279.868-.279V3c-.579 0-1.085.124-1.52.372a3.322 3.322 0 0 0-1.085.992 4.92 4.92 0 0 0-.62 1.458A7.712 7.712 0 0 0 3 7.558V11a1 1 0 0 0 1 1h2Z"/>
+                    </svg>
+
+                    <blockquote class="text-lg italic text-gray-200 leading-relaxed flex-grow">
+                        "Eunice is a highly dependable and proactive individual with strong analytical and creative skills. I was impressed by her commitment to excellence, attention to detail, and eagerness to learn. She consistently demonstrates initiative, clear thinking, and a genuine drive to grow — qualities that make her a valuable addition to any professional team."
+                    </blockquote>
+
+                    <div class="mt-6">
+                        <p class="font-bold text-white text-lg">Pdt. Andreas Pilipus, M.Th.</p>
+                        <p class="text-sm text-blue-300">Reverend at Gereja Kristus Bogor</p>
+                    </div>
+                </div>
+
+                <!-- Rekomendasi 3 -->
+                <div class="glass-card p-8 mb-8">
+                    <svg class="w-10 h-10 text-blue-400 mb-4" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 16 16">
+                        <path d="M12 12a1 1 0 0 0 1-1V8.558a1 1 0 0 0-1-1h-1.388c0-.351.021-.703.062-1.054.062-.372.166-.703.31-.992.145-.29.331-.517.559-.683.227-.186.516-.279.868-.279V3c-.579 0-1.085.124-1.52.372a3.322 3.322 0 0 0-1.085.992 4.92 4.92 0 0 0-.62 1.458A7.712 7.712 0 0 0 9 7.558V11a1 1 0 0 0 1 1h2Zm-6 0a1 1 0 0 0 1-1V8.558a1 1 0 0 0-1-1H4.612c0-.351.021-.703.062-1.054.062-.372.166-.703.31-.992.145-.29.331-.517.559-.683.227-.186.516-.279.868-.279V3c-.579 0-1.085.124-1.52.372a3.322 3.322 0 0 0-1.085.992 4.92 4.92 0 0 0-.62 1.458A7.712 7.712 0 0 0 3 7.558V11a1 1 0 0 0 1 1h2Z"/>
+                    </svg>
+
+                    <blockquote class="text-lg italic text-gray-200 leading-relaxed flex-grow">
+                        "I've known Eunice since high school, where she served as our class secretary. To me personally, she stood out for her reliability. As one of the top students in our class, Eunice was highly organized, dependable, and always ready to step up when something needed to get done.
+                        <br><br>What has always inspired me most about Eunice is her strength of character. She's faced significant personal challenges, yet she's carried herself with grace, resilience, and an unfailingly positive spirit.
+                        <br><br>Eunice's good work ethic, kindness, and perseverance makes her someone you can trust and truly enjoy working with. I have no doubt she brings the same dedication and positivity to everything she does!"
+                    </blockquote>
+
+                    <div class="mt-6">
+                        <p class="font-bold text-white text-lg">Aldif Raja Putra Fajar</p>
+                        <p class="text-sm text-blue-300">Law Student at Universitas Pelita Harapan</p>
+                    </div>
+                </div>
+            </div>
+            <div class="text-center mt-8">
+                <a href="https://www.linkedin.com/in/euniceeugenia/details/recommendations/" target="_blank" rel="noopener noreferrer" class="rounded-md bg-blue-500 px-6 py-3 text-base font-medium text-white hover:bg-blue-600 transition-all transform hover:scale-105">
+                    View All on LinkedIn
+                </a>
+            </div>
+        </section>
+
         <!-- Contact Section -->
         <section id="contact" class="mt-28 md:mt-40 scroll-mt-20 fade-in-section">
             <h2 class="text-3xl font-bold text-white mb-4 text-center">Get In Touch</h2>
@@ -461,8 +538,6 @@
     </button>
 
     <style>
-    /* PERBAIKAN: Mengubah style .skill-item ke dark mode */
-    
     #skills .flex {
         display: flex;
         flex-wrap: wrap;
@@ -533,9 +608,6 @@
     .skill-item {
         animation: fadeUp 0.6s ease both;
     }
-
-    /* Staggered animation delay untuk setiap grup (Hard dan Soft skills) */
-    /* Kita perlu me-reset ini agar soft skills juga punya animasi */
     
     /* Hard Skills */
     #skills .flex:nth-of-type(1) .skill-item:nth-child(1) { animation-delay: 0.1s; }
